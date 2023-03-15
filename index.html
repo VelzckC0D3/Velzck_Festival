@@ -1,14 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The capstone project ustin HTML, CSS & Javascript by VelzckC0D3.">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Velzck Capstone Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="The capstone project ustin HTML, CSS & Javascript by VelzckC0D3.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <link id="homeStyle" rel="stylesheet" href="style/home.css">
+  <title>Velzck Capstone Project</title>
 </head>
-<body>
-    <script src="script.js"></script>
+
+<body ontouchstart>
+  <!-- HEADER -->
+  <header>
+
+    <div id="menuCont">
+      <div id="menu">
+        <button id="menuBtn" class="menuAction" aria-label="menu button"><img src="style/icons/hamb-bars.svg"
+            alt=""></button>
+        <div class="logoCont">
+          <a href="#">
+            <img id="menuLogo" src="style/logo/header-logo2.webp" alt="">
+          </a>
+        </div>
+        <ul id="menuBar">
+          <li class="menuItem"><a class="menuLink menuAction" href="#about">about</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#program">program</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#join">join</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#sponsor">sponsor</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#news">news</a></li>
+          <li class="menuItem"><a id="campaignBtn" class="menuLink menuAction" href="#CC-campaign">CC campaign</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <!--   HOMEPAGE -->
+  <section id="homePage">
+
+    <!-- HERO -->
+    <section id="heroCont">
+
+      <div id="hero">
+        <h3 class="heroTItle">"hello designers of the world!"</h3>
+        <h1 class="heroTItle">architecture and designers festival <br>2023</h1>
+        <p class="heroDescription">Welcome to the national burger competition! The best burger chefs from across the
+          country compete for the title. Let the burger battle begin!</p>
+        <h2 class="heroDate">2023.08.25(FRY) ~ 27(SUN)</h2>
+        <a class="heroLocation" href="#" target="_blank">@ Medellín, the city of eternal spring</a>
+      </div>
+
+    </section>
+    <!-- ABOUT ME -->
+    <section id="mainProgramCont">
+
+      <div id="mainProgram">
+        <div class="beforeTest">
+          <h3 id="programTitle">main program</h3>
+        </div>
+        <ul id="programUl">
+          <li class="programLi"><img src="style/program/lecture.svg" alt="">
+            <h2 class="programLiH2">lecture</h2>
+            <p class="programLiDesc">Listen to the speakers from various countries about the messages of sharing and
+              opening.</p>
+          </li>
+          <li class="programLi"><img src="style/program/exhibition.svg" alt="">
+            <h2 class="programLiH2">exhibition</h2>
+            <p class="programLiDesc">Appreciate various creations applying CC license of artists, organized from Art
+              Center Nabi</p>
+          </li>
+          <li class="programLi"><img src="style/program/forum.svg" alt="">
+            <h2 class="programLiH2">forum</h2>
+            <p class="programLiDesc">Have the time to share your thoughts and opinions with experts for each topic.</p>
+          </li>
+          <li class="programLi"><img src="style/program/workshop.svg" alt="">
+            <h2 class="programLiH2">workshop</h2>
+            <p class="programLiDesc">Try creating your own work using open source license rather than just watching at
+              it.
+            </p>
+          </li>
+          <li class="programLi"><img src="style/program/ignite.svg" alt="">
+            <h2 class="programLiH2">ignite</h2>
+            <p class="programLiDesc">get opportunities to network with CC affiliates around the world, also after the
+              summit.</p>
+          </li>
+        </ul>
+        <button aria-label="Join the festival" id="programButton"><a id="programLink" href="#" target="_blank"
+            rel="noopener noreferrer">Join A&D Festival 2023</a></button>
+      </div>
+
+    </section>
+    <!-- FEATURED SPEAKERS -->
+    <section id="speakersCont">
+
+      <h2 id="speakersTitle">Featured Speakers</h2>
+      <script src="/assets/speakers.js"></script>
+      <button class="more">more<img class="arrow" src="style/icons/arrow-down.svg" alt=""></button>
+
+    </section>
+
+  </section>
+  <!--   HOMEPAGE -->
+
+  <!-- ABOUTPAGE -->
+  <section id="aboutPage">
+    section
+  </section>
+  <!-- ABOUTPAGE -->
+
+  <!-- PARTNERS -->
+  <section id="partnersCont">
+
+    <div id="partners">
+      <h3 id="partnersTittle">Partners</h3>
+      <div id="partnersMid">
+        <img class="partnerLogo" src="style/logo/partner-mozilla.svg" alt="mozilla logo">
+        <img class="partnerLogo" src="style/logo/partner-google.svg" alt="google logo">
+        <img class="partnerLogo" src="style/logo/partner-naver.svg" alt="naver logo">
+      </div>
+      <div id="partnersButtom">
+        <img class="partnerLogo" src="style/logo/partner-daumkakao.svg" alt="dumkakao logo">
+        <img class="partnerLogo" src="style/logo/partner-airbnb.svg" alt="airbnb logo">
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="footerCont">
+
+    <div id="footer">
+      <div id="copryright">
+        <img id="footerImg" src="style/logo/about-logo-complete.webp" alt="" width="500" height="150">
+        <h2 id="info">2023 - Alejandro Velasquez<br><span>VELZCK</span> All Rights Reserved</br></h2>
+      </div>
+      <div id="contact"></div>
+    </div>
+
+  </footer>
+
+  <script src="/assets/mobile-menu.js"></script> <!-- mobile menu interaction -->
 </body>
+
 </html>
