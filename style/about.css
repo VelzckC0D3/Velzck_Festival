@@ -1,0 +1,271 @@
+:root {
+  --pColor: #272a31;
+  --sColor: #ec5242;
+  --tColor: #d3d3d3;
+}
+
+/* ABOUT PAGE - HERO | HERO | HERO - ABOUT PAGE*/
+
+#heroContAbout {
+  margin-top: 5rem;
+  width: 100vw;
+  height: auto;
+  background-color: var(--tColor);
+  background-image: url(bg/bg.webp);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  justify-content: flex-start;
+}
+
+#heroAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.heroTItleAbout {
+  text-align: center;
+  width: 100%;
+}
+
+.heroTitleAbout:nth-child(odd) {
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.heroTItleAbout:nth-child(even) {
+  background-image: url(bg/text-bg.png);
+  -webkit-background-clip: text;
+  filter: brightness(1);
+  background-position: 50% -50%;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.4rem;
+  -webkit-text-stroke: 2px transparent;
+  padding: 0;
+  margin: 0;
+  transform: translateY(-1rem);
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+#aboutDescription {
+  width: 100vw;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.7rem;
+  margin: 0;
+  -webkit-text-stroke: 0.3px;
+  box-shadow: 0 0 84px -11px rgba(0, 0, 0, 0.75);
+}
+
+#aboutContact {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  line-height: 1.7rem;
+}
+
+#aboutEmail {
+  -webkit-text-stroke: 0.5px;
+}
+
+#aboutEmail:active,
+#aboutEmail:visited,
+#aboutEmail:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* ABOUT PAGE - HERO | HERO | HERO - ABOUT PAGE*/
+
+/* LOGO INFO | LOGO INFO */
+
+#logoInfoCont {
+  width: 100vw;
+  height: auto;
+}
+
+#logoTitle {
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+
+#logotitleCont {
+  width: 100%;
+  display: flex;
+}
+
+#logotitleCont::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 7rem;
+  width: 4rem;
+  margin: 0 3rem;
+  border-bottom: 3px solid var(--sColor);
+}
+
+#logoInfo {
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 84px -11px rgba(0, 0, 0, 0.75);
+  color: var(--pColor);
+  -webkit-text-stroke: 0.4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#logoImg {
+  height: 5rem;
+  width: auto;
+  transform: translateX(-1rem);
+  transition: 300ms all ease-in-out;
+}
+
+#logoImg:hover {
+  transform: scale(1.1) translateX(-1rem);
+}
+
+/* LOGO INFO | LOGO INFO */
+
+/* PREVIOUS FESTIVAL | PREVIOUS FESTIVAL */
+
+#previousFestivalCont {
+  width: 100vw;
+  height: auto;
+}
+
+#previousFestival {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#previousTitleCont {
+  width: 100%;
+  padding: 1rem 0 2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#previousTitleCont::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 6rem;
+  width: 4rem;
+  margin: 0 3rem;
+  border-bottom: 3px solid var(--sColor);
+}
+
+#previousTitle {
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+#previousFestivalText {
+  text-align: center;
+  padding: 0 1rem;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+#previousImgCont {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 1rem 0;
+}
+
+.previousImg {
+  width: 90%;
+  height: 14rem;
+  border-radius: 45px 0 45px 0;
+  border-bottom: 3px solid var(--sColor);
+  border-left: 3px solid var(--sColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 0.5px;
+}
+
+.imgText {
+  background-color: rgba(8, 8, 8, 0.8);
+  border-radius: 8px;
+  opacity: 0;
+  transition: 1200ms all ease-in-out;
+  font-size: 1.2rem;
+}
+
+.previousImg:hover .imgText {
+  opacity: 1;
+  transition: 800ms all ease-in-out;
+}
+
+.previousImg::before {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 14rem;
+  background-color: rgba(197, 30, 0, 0.534);
+  border-radius: 45px 0 45px 0;
+  color: white;
+  font-size: 1.8rem;
+  -webkit-text-stroke: 1px;
+}
+
+.previousImg:nth-child(1) {
+  background-image: url(past-festivals/festival1.webp);
+  background-size: cover;
+}
+
+.previousImg:nth-child(2) {
+  background-image: url(past-festivals/festival2.webp);
+  background-size: cover;
+}
+
+.previousImg:nth-child(1):before {
+  content: "2018";
+  padding: 2rem;
+  transition: 1000ms color ease-in-out, 700ms background-color ease-in-out;
+}
+
+.previousImg:nth-child(2):before {
+  content: "2020";
+  padding: 2rem;
+  transition: 1000ms color ease-in-out, 700ms background-color ease-in-out;
+}
+
+.previousImg:hover:nth-child(1)::before {
+  color: rgba(255, 255, 255, 0);
+  background-color: transparent;
+    transition: 300ms color ease-in-out, 800ms background-color ease-in-out;
+}
+
+.previousImg:hover:nth-child(2)::before {
+  color: rgba(255, 255, 255, 0);
+  background-color: transparent;
+    transition: 300ms color ease-in-out, 800ms background-color ease-in-out;
+}
+
+/* PREVIOUS FESTIVAL | PREVIOUS FESTIVAL */

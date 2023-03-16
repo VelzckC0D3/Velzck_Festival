@@ -11,14 +11,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
-  <link id="homeStyle" rel="stylesheet" href="style/home.css">
+  <link rel="stylesheet" href="style/home.css">
+  <link rel="stylesheet" href="style/about.css">
   <title>Velzck Capstone Project</title>
 </head>
 
 <body ontouchstart>
   <!-- HEADER -->
   <header>
+    <div id="accessibilityCont">
+      <ul id="accessibility">
+        <li class="accessibilityIcon">F</li>
+        <li class="accessibilityIcon">T</li>
+        <div id="languageWrapper">
 
+          <ul id="languageCont">
+            <li class="language">english</li>
+            <li class="language">spanish</li>
+            <li class="language">italian</li>
+            <li class="language">russian</li>
+          </li>
+        </ul>
+
+      </div>
+        <li id="register">register</li>
+        <li class="log in">log in</li>
+    </div>
     <div id="menuCont">
       <div id="menu">
         <button id="menuBtn" class="menuAction" aria-label="menu button"><img src="style/icons/hamb-bars.svg"
@@ -29,10 +47,10 @@
           </a>
         </div>
         <ul id="menuBar">
-          <li class="menuItem"><a class="menuLink menuAction" href="#about">about</a></li>
-          <li class="menuItem"><a class="menuLink menuAction" href="#program">program</a></li>
-          <li class="menuItem"><a class="menuLink menuAction" href="#join">join</a></li>
-          <li class="menuItem"><a class="menuLink menuAction" href="#sponsor">sponsor</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#menuCont">home</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#aboutCont">about</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#mainProgramCont">program</a></li>
+          <li class="menuItem"><a class="menuLink menuAction" href="#speakersCont">featured</a></li>
           <li class="menuItem"><a class="menuLink menuAction" href="#news">news</a></li>
           <li class="menuItem"><a id="campaignBtn" class="menuLink menuAction" href="#CC-campaign">CC campaign</a></li>
         </ul>
@@ -61,7 +79,7 @@
     <section id="mainProgramCont">
 
       <div id="mainProgram">
-        <div class="beforeTest">
+        <div id="titleCont">
           <h3 id="programTitle">main program</h3>
         </div>
         <ul id="programUl">
@@ -100,7 +118,7 @@
     <section id="speakersCont">
 
       <h2 id="speakersTitle">Featured Speakers</h2>
-      <script src="/assets/speakers.js"></script>
+      <script src="/assets/dynamicSpeakers.js"></script>
       <button class="more">more<img class="arrow" src="style/icons/arrow-down.svg" alt=""></button>
 
     </section>
@@ -110,7 +128,58 @@
 
   <!-- ABOUTPAGE -->
   <section id="aboutPage">
-    section
+
+    <section id="heroContAbout">
+
+      <div id="heroAbout">
+        <h3 class="heroTItleAbout">"hello designers of the world!"</h3>
+        <h1 class="heroTItleAbout">architecture and designers festival <br>2023</h1>
+        <p id="aboutDescription">The Global Summit brings together the community of
+          experts, academics, and activists who comprise the Creative Commons affiliate network in a different country
+          every two years.
+          This year, we hope to expand our invitation list including organizations and individuals.</p>
+        <p id="aboutContact">
+          Please contact us per Email for nay further questions about CC Global Summit 2015! <a id="aboutEmail"
+            href="mailto:alejandro.velzck@gmail.com">alejandro.velzck@gmail.com</a>
+        </p>
+      </div>
+
+    </section>
+
+    <section id="logoInfoCont">
+
+      <div id="logoInfoCont">
+        <div id="logotitleCont">
+          <h2 id="logoTitle">architecture and design <br>festival - 2023 - logo</h2>
+        </div>
+        <p id="logoInfo">The logo was conceptualized and designed by Alejandro Velasquez, also known as "Velzck", on
+          March 12, 2023, and was chosen as the final logo for the festival.
+          <br><img id="logoImg" src="style/logo/about-logo-complete.webp" width="600" height="200" alt="">
+        </p>
+      </div>
+
+    </section>
+
+    <section id="previousFestivalCont">
+
+      <div id="previousFestival">
+        <div id="previousTitleCont">
+          <h2 id="previousTitle">See the past Architecture & Design Festival</h2>
+        </div>
+        <p id="previousFestivalText">Take a look at the past two Architecture And Design Festival which took place at
+          Mdedellin, Colombia.</p>
+        <div id="previousImgCont">
+          <div class="previousImg">
+            <p class="imgText">Architecture and Design Festival 2018</p>
+          </div>
+          <div class="previousImg">
+            <p class="imgText">Architecture and Design Festival 2020</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
   </section>
   <!-- ABOUTPAGE -->
 
@@ -136,7 +205,7 @@
 
     <div id="footer">
       <div id="copryright">
-        <img id="footerImg" src="style/logo/about-logo-complete.webp" alt="" width="500" height="150">
+        <img id="footerImg" src="style/logo/about-logo.webp" alt="">
         <h2 id="info">2023 - Alejandro Velasquez<br><span>VELZCK</span> All Rights Reserved</br></h2>
       </div>
       <div id="contact"></div>
@@ -144,7 +213,8 @@
 
   </footer>
 
-  <script src="/assets/mobile-menu.js"></script> <!-- mobile menu interaction -->
+  <script src="/assets/menuActions.js"></script> <!-- mobile menu interaction -->
+  <script src="/assets/switch.js"></script> <!-- mobile menu interaction -->
 </body>
 
 </html>
