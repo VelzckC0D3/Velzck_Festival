@@ -1,13 +1,3 @@
-// CHECK ACTUAL SCROLL Y //
-
-// const cont = window;
-// cont.addEventListener('scroll', () => {
-//   const scrollPosition = window.pageYOffset;
-//   console.log(`position is: ${scrollPosition}px`);
-// });
-
-// CHECK ACTUAL SCROLL Y //
-
 // SWITCH ACTION BUTTON //
 
 const aboutLink = document.querySelector('.aboutButton');
