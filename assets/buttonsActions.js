@@ -52,27 +52,6 @@ window.addEventListener('scroll', () => {
 
 // FIXED DESKTOP MENU //
 
-// MORE SPEAKERS BUTTON ACTION //
-
-const moreButton = document.querySelector('.more');
-const more = document.querySelector('.moreSpeakers');
-moreButton.addEventListener('click', () => {
-  more.classList.toggle('showMore');
-  if (
-    moreButton.innerHTML
-    === 'more<img class="arrow" src="style/icons/arrow-down.svg" alt="arrow down icon">'
-  ) {
-    moreButton.innerHTML = 'less<img class="arrow" src="style/icons/arrow-up.svg" alt="arrow up icon">';
-  } else if (
-    moreButton.innerHTML
-    === 'less<img class="arrow" src="style/icons/arrow-up.svg" alt="arrow up icon">'
-  ) {
-    moreButton.innerHTML = 'more<img class="arrow" src="style/icons/arrow-down.svg" alt="arrow down icon">';
-  }
-});
-
-// MORE SPEAKERS BUTTON ACTION //
-
 // DISABLE MOBILE MENU ON CERTAIN RESOLUTION //
 
 function removeClassesOnResize() {
@@ -85,3 +64,24 @@ function removeClassesOnResize() {
 window.addEventListener('resize', removeClassesOnResize);
 
 // DISABLE MOBILE MENU ON CERTAIN RESOLUTION //
+
+// MORE SPEAKERS BUTTON ACTION //
+
+const moreButton = document.querySelector('.more');
+const more = document.querySelector('.moreSpeakers');
+moreButton.addEventListener('click', () => {
+  more.classList.toggle('showMore');
+  if (
+    moreButton.innerHTML
+    === 'more<img class="arrow" src="style/icons/arrow-down.svg" alt="arrow down">'
+  ) {
+    moreButton.innerHTML = 'less<img class="arrow" src="style/icons/arrow-up.svg" alt="arrow up icon">';
+  } else if (
+    moreButton.innerHTML
+    === 'less<img class="arrow" src="style/icons/arrow-up.svg" alt="arrow up icon">'
+  ) {
+    moreButton.innerHTML = 'more<img class="arrow" src="style/icons/arrow-down.svg" alt="arrow down">';
+  }
+});
+
+// MORE SPEAKERS BUTTON ACTION //
