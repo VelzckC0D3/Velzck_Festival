@@ -29,6 +29,16 @@ menuButtons.forEach((index) => {
 
 // MENU BUTTONS ACTION //
 
+// LOGO TAKES YOU TO HOME PAGE //
+
+const logo = document.querySelector('#menuLogo');
+logo.addEventListener('click', ()=> {
+  heroPage.classList.remove('switch');
+  aboutPage.classList.add('switch');
+});
+
+// LOGO TAKES YOU TO HOME PAGE //
+
 // ESCAPE ClOSES EVERYTHING //
 
 document.addEventListener('keydown', (e) => {
