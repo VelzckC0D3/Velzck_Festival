@@ -32,7 +32,9 @@ menuButtons.forEach((index) => {
 // LOGO TAKES YOU TO HOME PAGE //
 
 const logo = document.querySelector('#menuLogo');
-logo.addEventListener('click', ()=> {
+const heroPage = document.querySelector('#homePage');
+const aboutPage = document.querySelector('#aboutPage');
+logo.addEventListener('click', () => {
   heroPage.classList.remove('switch');
   aboutPage.classList.add('switch');
 });
