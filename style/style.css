@@ -121,12 +121,6 @@ header {
   background: var(--sColor);
 }
 
-#register {
-}
-
-#logIn {
-}
-
 /* ACCESSIBILITY | ACCESSIBILITY */
 
 /* NAVBAR MENU | NAVBAR MENU | NAVBAR MENU */
@@ -151,7 +145,6 @@ header {
   height: 3rem;
   width: 3rem;
   display: flex;
-  background-color: rgba(190, 190, 190, 0);
   opacity: 0.8;
   border: none;
   z-index: 2;
@@ -312,7 +305,7 @@ header {
   margin: 0;
 }
 
-#partnersTittle:before {
+#partnersTittle::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -437,6 +430,7 @@ header {
   #info {
     font-size: 0.9rem;
   }
+
   .partnerLogo {
     height: 2.5rem;
   }
@@ -446,6 +440,7 @@ header {
   #info {
     font-size: 1rem;
   }
+
   .partnerLogo {
     height: 2.5rem;
   }
@@ -512,7 +507,7 @@ header {
   #menuBar {
     height: 45%;
     width: 50%;
-    gap: 0;
+    gap: 1rem;
     top: 0;
     left: 0;
     margin: 0;
@@ -536,7 +531,6 @@ header {
     border-left: none;
     box-shadow: none;
     background-color: transparent;
-    padding: 0 0.3rem;
     font-size: 14px;
   }
 
@@ -575,9 +569,16 @@ header {
     background-color: transparent;
   }
 
+  .menuItem:active {
+    background-color: transparent;
+    transition: 1ms all ease-in-out;
+    border-radius: 16px;
+  }
+
   .menuItem:last-child:hover {
     background-color: transparent;
     transform: scale(1);
+    border-radius: 12px;
   }
 
   .menuLink {
@@ -591,19 +592,9 @@ header {
     -webkit-text-stroke-color: var(--sColor);
   }
 
-  .menuItem:last-child:hover {
-    border-radius: 12px;
-  }
-
   .menuItem:last-child:hover > .menuAction {
     color: black;
     -webkit-text-stroke-color: black;
-    border-radius: 16px;
-  }
-
-  .menuItem:active {
-    background-color: transparent;
-    transition: 1ms all ease-in-out;
     border-radius: 16px;
   }
 

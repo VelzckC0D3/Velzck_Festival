@@ -80,5 +80,3 @@ speakers.forEach((p, i) => {
 // DYNAMIC SPEAKERS CARD
 
 // MORE BUTTON ACTION
-
-

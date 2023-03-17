@@ -8,7 +8,7 @@
   display: none;
 }
 
-/* ABOUT PAGE - HERO | HERO | HERO - ABOUT PAGE*/
+/* ABOUT PAGE - HERO | HERO | HERO - ABOUT PAGE */
 
 #aboutPage {
   width: 100vw;
@@ -93,7 +93,7 @@
   color: white;
 }
 
-/* ABOUT PAGE - HERO | HERO | HERO - ABOUT PAGE*/
+/* ABOUT PAGE - HERO | HERO | HERO - ABOUT PAGE */
 
 /* LOGO INFO | LOGO INFO */
 
@@ -107,14 +107,14 @@
   box-shadow: 0 0 84px -11px rgba(0, 0, 0, 0.3);
 }
 
-#logoInfoCont{ 
+#logoInfoCont {
   height: auto;
   overflow: hidden;
   display: flex;
   gap: 2rem;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 16px;
 }
 
@@ -276,13 +276,13 @@
   background-size: cover;
 }
 
-.previousImg:nth-child(1):before {
+.previousImg:nth-child(1)::before {
   content: "2018";
   padding: 2rem;
   transition: 1000ms color ease-in-out, 700ms background-color ease-in-out;
 }
 
-.previousImg:nth-child(2):before {
+.previousImg:nth-child(2)::before {
   content: "2020";
   padding: 2rem;
   transition: 1000ms color ease-in-out, 700ms background-color ease-in-out;
@@ -370,7 +370,7 @@
   #previousFestivalText {
     padding: 2rem 0;
   }
-  
+
   #previousImgCont {
     flex-direction: row;
     width: auto;
@@ -383,11 +383,9 @@
   .previousImg::before {
     width: 43.1%;
   }
-
 }
 
- @media (min-width: 1024px) {
-
+@media (min-width: 1024px) {
   #heroContAbout,
   .heroTItleAbout:nth-child(even),
   #aboutDescription,
@@ -404,7 +402,7 @@
     width: 65%;
     font-size: 1.3rem;
   }
-  
+
   #logoImg {
     height: 10rem;
   }
@@ -426,7 +424,8 @@
     width: 26rem;
     height: 20rem;
   }
- }
+}
+
 /* MEDIA MIN | MEDIA MIN */
 
 /* MEDIA MAX | MEDIA MAX */
