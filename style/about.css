@@ -4,10 +4,21 @@
   --tColor: #d3d3d3;
 }
 
+.aboutOn {
+  display: none;
+}
+
 /* ABOUT PAGE - HERO | HERO | HERO - ABOUT PAGE*/
 
+#aboutPage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #heroContAbout {
-  margin-top: 5rem;
   width: 100vw;
   height: auto;
   background-color: var(--tColor);
@@ -58,8 +69,9 @@
   text-align: center;
   line-height: 1.7rem;
   margin: 0;
+  border-radius: 16px;
   -webkit-text-stroke: 0.3px;
-  box-shadow: 0 0 84px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 84px -11px rgba(0, 0, 0, 0.3);
 }
 
 #aboutContact {
@@ -71,12 +83,13 @@
 
 #aboutEmail {
   -webkit-text-stroke: 0.5px;
+  text-decoration: underline;
 }
 
 #aboutEmail:active,
 #aboutEmail:visited,
 #aboutEmail:link {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 
@@ -84,9 +97,25 @@
 
 /* LOGO INFO | LOGO INFO */
 
-#logoInfoCont {
+#logoCont {
+  padding: 2rem 0;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 84px -11px rgba(0, 0, 0, 0.3);
+}
+
+#logoInfoCont{ 
   height: auto;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 16px;
 }
 
 #logoTitle {
@@ -95,7 +124,7 @@
   padding: 1rem 2rem;
   text-align: center;
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 #logotitleCont {
@@ -115,8 +144,7 @@
 
 #logoInfo {
   text-align: center;
-  padding: 2rem;
-  box-shadow: 0 0 84px -11px rgba(0, 0, 0, 0.75);
+  padding: 0 1rem;
   color: var(--pColor);
   -webkit-text-stroke: 0.4px;
   display: flex;
@@ -127,12 +155,11 @@
 #logoImg {
   height: 5rem;
   width: auto;
-  transform: translateX(-1rem);
   transition: 300ms all ease-in-out;
 }
 
-#logoImg:hover {
-  transform: scale(1.1) translateX(-1rem);
+#logoImg2 {
+  height: 5rem;
 }
 
 /* LOGO INFO | LOGO INFO */
@@ -140,14 +167,18 @@
 /* PREVIOUS FESTIVAL | PREVIOUS FESTIVAL */
 
 #previousFestivalCont {
-  width: 100vw;
-  height: auto;
+  width: 100%;
+  padding: 3rem 0;
+  display: flex;
 }
 
 #previousFestival {
   width: 100vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 0 2rem;
 }
 
 #previousTitleCont {
@@ -205,6 +236,7 @@
   text-align: center;
   color: white;
   -webkit-text-stroke: 0.5px;
+  cursor: pointer;
 }
 
 .imgText {
@@ -259,13 +291,144 @@
 .previousImg:hover:nth-child(1)::before {
   color: rgba(255, 255, 255, 0);
   background-color: transparent;
-    transition: 300ms color ease-in-out, 800ms background-color ease-in-out;
+  transition: 300ms color ease-in-out, 800ms background-color ease-in-out;
 }
 
 .previousImg:hover:nth-child(2)::before {
   color: rgba(255, 255, 255, 0);
   background-color: transparent;
-    transition: 300ms color ease-in-out, 800ms background-color ease-in-out;
+  transition: 300ms color ease-in-out, 800ms background-color ease-in-out;
 }
 
 /* PREVIOUS FESTIVAL | PREVIOUS FESTIVAL */
+
+/* MEDIA MIN | MEDIA MIN */
+
+@media (min-width: 680px) {
+  #heroContAbout {
+    height: 87vh;
+    background-size: 165%;
+    background-position: 0% 80%;
+    justify-content: center;
+  }
+
+  #heroAbout {
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .heroTItleAbout:nth-child(2) {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  #aboutDescription {
+    width: 90vw;
+  }
+
+  #aboutContact {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  #logoInfoCont {
+    width: 90%;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  #logotitleCont::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 8rem;
+    width: 4rem;
+    margin: 0 3rem;
+    border-bottom: 3px solid var(--sColor);
+  }
+
+  #logoInfo {
+    padding: 2rem 0 0;
+    margin: 0;
+  }
+
+  #previousFestivalCont {
+    width: 100%;
+  }
+
+  #previousFestival {
+    width: 90%;
+  }
+
+  #previousTitleCont {
+    padding: 2rem 0;
+  }
+
+  #previousFestivalText {
+    padding: 2rem 0;
+  }
+  
+  #previousImgCont {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .previousImg {
+    width: auto;
+  }
+
+  .previousImg::before {
+    width: 43.1%;
+  }
+
+}
+
+ @media (min-width: 1024px) {
+
+  #heroContAbout,
+  .heroTItleAbout:nth-child(even),
+  #aboutDescription,
+  #aboutContact {
+    width: 100%;
+  }
+
+  #heroAbout {
+    width: 65%;
+    justify-content: center;
+  }
+
+  #logoInfoCont {
+    width: 65%;
+    font-size: 1.3rem;
+  }
+  
+  #logoImg {
+    height: 10rem;
+  }
+
+  #logoImg2 {
+    height: 8rem;
+  }
+
+  .heroTItleAbout:nth-child(even) {
+    font-size: 3rem;
+  }
+
+  .previousImg {
+    width: 26rem;
+    height: 20rem;
+  }
+
+  .previousImg::before {
+    width: 26rem;
+    height: 20rem;
+  }
+ }
+/* MEDIA MIN | MEDIA MIN */
+
+/* MEDIA MAX | MEDIA MAX */
+
+/* MEDIA MAX | MEDIA MAX */

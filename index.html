@@ -18,11 +18,13 @@
 
 <body ontouchstart>
   <!-- HEADER -->
-  <header>
+  <heade id="top">
     <div id="accessibilityCont">
       <ul id="accessibility">
-        <li class="accessibilityIcon">F</li>
-        <li class="accessibilityIcon">T</li>
+        <li class="accessibilityOption"><a href="#"><img class="accessibilityIcon" src="style/icons/facebook.svg"
+              alt=""></a></li>
+        <li class="accessibilityOption"><a href="#"><img class="accessibilityIcon" src="style/icons/twitter.svg"
+              alt=""></a></li>
         <div id="languageWrapper">
 
           <ul id="languageCont">
@@ -30,191 +32,221 @@
             <li class="language">spanish</li>
             <li class="language">italian</li>
             <li class="language">russian</li>
-          </li>
-        </ul>
+            </li>
+          </ul>
 
-      </div>
-        <li id="register">register</li>
-        <li class="log in">log in</li>
+        </div>
+        <li class="accessibilityOption" id="register">register</li>
+        <li class="accessibilityOption" id="log-in">log in</li>
     </div>
     <div id="menuCont">
       <div id="menu">
         <button id="menuBtn" class="menuAction" aria-label="menu button"><img src="style/icons/hamb-bars.svg"
             alt=""></button>
         <div class="logoCont">
-          <a href="#">
+          <a href="#top">
             <img id="menuLogo" src="style/logo/header-logo2.webp" alt="">
           </a>
         </div>
         <ul id="menuBar">
-          <li class="menuItem"><a class="menuLink menuAction" href="#menuCont">home</a></li>
-          <li class="menuItem"><a class="menuLink menuAction" href="#aboutCont">about</a></li>
-          <li class="menuItem"><a class="menuLink menuAction" href="#mainProgramCont">program</a></li>
-          <li class="menuItem"><a class="menuLink menuAction" href="#speakersCont">featured</a></li>
-          <li class="menuItem"><a class="menuLink menuAction" href="#news">news</a></li>
-          <li class="menuItem"><a id="campaignBtn" class="menuLink menuAction" href="#CC-campaign">CC campaign</a></li>
+          <li class="menuItem"><a class="menuLink menuAction homeButton" href="#">home</a></li>
+          <li class="menuItem homeSection"><a class="menuLink menuAction" href="#mainProgramCont">program</a></li>
+          <li class="menuItem homeSection"><a class="menuLink menuAction" href="#speakersCont">featured</a></li>
+          <li class="menuItem"><a class="menuLink menuAction aboutButton" href="#">about</a></li>
+          <li class="menuItem aboutSection"><a class="menuLink menuAction" href="#logoCont">logo</a></li>
+          <li class="menuItem"><a id="campaignBtn" class="menuLink menuAction" href="#festival">A&D Festival</a></li>
         </ul>
       </div>
     </div>
 
-  </header>
+    </header>
 
-  <!--   HOMEPAGE -->
-  <section id="homePage">
+    <!--   HOMEPAGE -->
+    <section id="homePage">
 
-    <!-- HERO -->
-    <section id="heroCont">
+      <!-- HERO -->
+      <section id="heroCont">
 
-      <div id="hero">
-        <h3 class="heroTItle">"hello designers of the world!"</h3>
-        <h1 class="heroTItle">architecture and designers festival <br>2023</h1>
-        <p class="heroDescription">Welcome to the national burger competition! The best burger chefs from across the
-          country compete for the title. Let the burger battle begin!</p>
-        <h2 class="heroDate">2023.08.25(FRY) ~ 27(SUN)</h2>
-        <a class="heroLocation" href="#" target="_blank">@ Medellín, the city of eternal spring</a>
-      </div>
-
-    </section>
-    <!-- ABOUT ME -->
-    <section id="mainProgramCont">
-
-      <div id="mainProgram">
-        <div id="titleCont">
-          <h3 id="programTitle">main program</h3>
+        <div id="hero">
+          <h3 class="heroTitle">"hello designers of the world!"</h3>
+          <h1 class="heroTitle">architecture and designers festival <br>2023</h1>
+          <p id="heroDescription">Welcome to the intrnational <span id="heroSpan">Architecture and Design festival
+              2023®</span> The best architects and designers around the globe to take the international prestigious
+            title. Let the architecture battle begin!</p>
+          <h2 id="heroDate">2023.08.25(FRY) ~ 27(SUN)</h2>
+          <a id="heroLocation" href="#" target="_blank">@ Medellín, the city of eternal spring</a>
         </div>
-        <ul id="programUl">
-          <li class="programLi"><img src="style/program/lecture.svg" alt="">
-            <h2 class="programLiH2">lecture</h2>
-            <p class="programLiDesc">Listen to the speakers from various countries about the messages of sharing and
-              opening.</p>
-          </li>
-          <li class="programLi"><img src="style/program/exhibition.svg" alt="">
-            <h2 class="programLiH2">exhibition</h2>
-            <p class="programLiDesc">Appreciate various creations applying CC license of artists, organized from Art
-              Center Nabi</p>
-          </li>
-          <li class="programLi"><img src="style/program/forum.svg" alt="">
-            <h2 class="programLiH2">forum</h2>
-            <p class="programLiDesc">Have the time to share your thoughts and opinions with experts for each topic.</p>
-          </li>
-          <li class="programLi"><img src="style/program/workshop.svg" alt="">
-            <h2 class="programLiH2">workshop</h2>
-            <p class="programLiDesc">Try creating your own work using open source license rather than just watching at
-              it.
-            </p>
-          </li>
-          <li class="programLi"><img src="style/program/ignite.svg" alt="">
-            <h2 class="programLiH2">ignite</h2>
-            <p class="programLiDesc">get opportunities to network with CC affiliates around the world, also after the
-              summit.</p>
-          </li>
-        </ul>
-        <button aria-label="Join the festival" id="programButton"><a id="programLink" href="#" target="_blank"
-            rel="noopener noreferrer">Join A&D Festival 2023</a></button>
-      </div>
 
-    </section>
-    <!-- FEATURED SPEAKERS -->
-    <section id="speakersCont">
+      </section>
+      <!-- ABOUT ME -->
+      <section id="mainProgramCont">
 
-      <h2 id="speakersTitle">Featured Speakers</h2>
-      <script src="/assets/dynamicSpeakers.js"></script>
-      <button class="more">more<img class="arrow" src="style/icons/arrow-down.svg" alt=""></button>
-
-    </section>
-
-  </section>
-  <!--   HOMEPAGE -->
-
-  <!-- ABOUTPAGE -->
-  <section id="aboutPage">
-
-    <section id="heroContAbout">
-
-      <div id="heroAbout">
-        <h3 class="heroTItleAbout">"hello designers of the world!"</h3>
-        <h1 class="heroTItleAbout">architecture and designers festival <br>2023</h1>
-        <p id="aboutDescription">The Global Summit brings together the community of
-          experts, academics, and activists who comprise the Creative Commons affiliate network in a different country
-          every two years.
-          This year, we hope to expand our invitation list including organizations and individuals.</p>
-        <p id="aboutContact">
-          Please contact us per Email for nay further questions about CC Global Summit 2015! <a id="aboutEmail"
-            href="mailto:alejandro.velzck@gmail.com">alejandro.velzck@gmail.com</a>
-        </p>
-      </div>
-
-    </section>
-
-    <section id="logoInfoCont">
-
-      <div id="logoInfoCont">
-        <div id="logotitleCont">
-          <h2 id="logoTitle">architecture and design <br>festival - 2023 - logo</h2>
-        </div>
-        <p id="logoInfo">The logo was conceptualized and designed by Alejandro Velasquez, also known as "Velzck", on
-          March 12, 2023, and was chosen as the final logo for the festival.
-          <br><img id="logoImg" src="style/logo/about-logo-complete.webp" width="600" height="200" alt="">
-        </p>
-      </div>
-
-    </section>
-
-    <section id="previousFestivalCont">
-
-      <div id="previousFestival">
-        <div id="previousTitleCont">
-          <h2 id="previousTitle">See the past Architecture & Design Festival</h2>
-        </div>
-        <p id="previousFestivalText">Take a look at the past two Architecture And Design Festival which took place at
-          Mdedellin, Colombia.</p>
-        <div id="previousImgCont">
-          <div class="previousImg">
-            <p class="imgText">Architecture and Design Festival 2018</p>
+        <div id="mainProgram">
+          <div id="titleCont">
+            <h3 id="programTitle">main program</h3>
           </div>
-          <div class="previousImg">
-            <p class="imgText">Architecture and Design Festival 2020</p>
+          <ul id="programUl">
+            <li class="programLi" tabindex="0">
+              <img class="programImg" src="style/program/lecture.svg" alt="">
+              <h2 class="programLiH2">lecture</h2>
+              <p class="programLiDesc">Listen to the speakers from various countries about the messages of sharing and
+                opening.</p>
+            </li>
+            <li class="programLi" tabindex="0">
+              <img class="programImg" src="style/program/exhibition.svg" alt="">
+              <h2 class="programLiH2">exhibition</h2>
+              <p class="programLiDesc">Appreciate various creations applying architecture and design of each artist.</p>
+            </li>
+            <li class="programLi" tabindex="0">
+              <img class="programImg" src="style/program/forum.svg" alt="">
+              <h2 class="programLiH2">forum</h2>
+              <p class="programLiDesc">Have the time to share your thoughts and opinions with experts for each topic.
+              </p>
+            </li>
+            <li class="programLi" tabindex="0">
+              <img class="programImg" src="style/program/workshop.svg" alt="">
+              <h2 class="programLiH2">workshop</h2>
+              <p class="programLiDesc">Try creating your own work using open source license rather than just watching at
+                it.
+              </p>
+            </li>
+            <li class="programLi" tabindex="0">
+              <img class="programImg" src="style/program/ignite.svg" alt="">
+              <h2 class="programLiH2">ignite</h2>
+              <p class="programLiDesc">get opportunities to network with CC affiliates around the world, also after the
+                summit.</p>
+            </li>
+          </ul>
+          <button aria-label="Join the festival" id="programButton"><a id="programLink" href="#" target="_blank"
+              rel="noopener noreferrer">Join A&D Festival 2023</a></button>
+        </div>
+
+      </section>
+      <!-- FEATURED SPEAKERS -->
+      <section id="speakersCont">
+
+        <h2 id="speakersTitle">Featured Speakers</h2>
+
+        <div id="speakersGrid">
+
+        </div>
+
+        <script src="/assets/dynamicSpeakers.js"></script>
+        <button class="more">more<img class="arrow" src="style/icons/arrow-down.svg" alt=""></button>
+
+      </section>
+
+    </section>
+    <!--   HOMEPAGE -->
+
+    <!-- ABOUTPAGE -->
+    <section id="aboutPage" class="switch">
+
+      <section id="heroContAbout">
+
+        <div id="heroAbout">
+          <h3 class="heroTItleAbout">"hello designers of the world!"</h3>
+          <h1 class="heroTItleAbout">architecture and designers festival <br>2023</h1>
+          <p id="aboutDescription">The Architects and Designers Festival brings together a community of experts,
+            academics, and activists in the field of architecture and design in a different location every two years.
+            This year, we aim to expand our guest list to include organizations and individuals interested in
+            collaborating with us on joint projects that promote the advancement of the industry, free expression, and
+            open knowledge. If you're actively involved in the world of architecture and design - advocates for
+            open-source software, design enthusiasts, professionals from galleries, libraries, museums, archives,
+            government bodies, foundations, lawyers, and activists - we invite you to join us this year to work together
+            in creating a more robust and dynamic community.</p>
+          <p id="aboutContact">
+            Please contact us per Email for nay further questions about CC Global Summit 2015! <a id="aboutEmail"
+              href="mailto:alejandro.velzck@gmail.com">alejandro.velzck@gmail.com</a>
+          </p>
+        </div>
+
+      </section>
+
+      <section id="logoCont">
+
+        <div id="logoInfoCont">
+          <div id="logotitleCont">
+            <h2 id="logoTitle">architecture and design <br>festival - 2023 - logo</h2>
           </div>
+          <p id="logoInfo">The logo was conceptualized and designed by Alejandro Velasquez, also known as "Velzck", on
+            March 12, 2023, and was chosen as the final logo for the festival.
+          </p>
+          <img id="logoImg" src="style/logo/about-logo.webp" width="600" height="200" alt="">
+          <img id="logoImg2" src="style/logo/logo-symbol.webp" alt="">
+        </div>
+
+      </section>
+
+      <section id="previousFestivalCont">
+
+        <div id="previousFestival">
+          <div id="previousTitleCont">
+            <h2 id="previousTitle">See the past Architecture & Design Festival</h2>
+          </div>
+          <p id="previousFestivalText">Take a look at the past two Architecture And Design Festival which took place at
+            Medellin, Colombia.</p>
+          <div id="previousImgCont">
+            <div class="previousImg" tabindex="0">
+              <p class="imgText">Architecture and Design Festival 2018</p>
+            </div>
+            <div class="previousImg" tabindex="0">
+              <p class="imgText">Architecture and Design Festival 2020</p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </section>
+    <!-- ABOUTPAGE -->
+
+    <!-- PARTNERS -->
+    <section id="partnersCont">
+
+      <div id="partners">
+        <h3 id="partnersTittle">Partners</h3>
+        <div id="partnersLogoCont">
+          <img class="partnerLogo" src="style/logo/partner-mozilla.svg" alt="mozilla logo">
+          <img class="partnerLogo" src="style/logo/partner-google.svg" alt="google logo">
+          <img class="partnerLogo" src="style/logo/partner-naver.svg" alt="naver logo">
+          <img class="partnerLogo" src="style/logo/partner-daumkakao.svg" alt="dumkakao logo">
+          <img class="partnerLogo" src="style/logo/partner-airbnb.svg" alt="airbnb logo">
         </div>
       </div>
 
     </section>
+    <!-- PARTNERS -->
 
-  </section>
-  <!-- ABOUTPAGE -->
+    <!-- FOOTER -->
+    <footer id="footerCont">
 
-  <!-- PARTNERS -->
-  <section id="partnersCont">
-
-    <div id="partners">
-      <h3 id="partnersTittle">Partners</h3>
-      <div id="partnersMid">
-        <img class="partnerLogo" src="style/logo/partner-mozilla.svg" alt="mozilla logo">
-        <img class="partnerLogo" src="style/logo/partner-google.svg" alt="google logo">
-        <img class="partnerLogo" src="style/logo/partner-naver.svg" alt="naver logo">
+      <div id="footer">
+        <div id="copryright">
+          <div id="footerImgCont">
+            <img id="footerImg" src="style/logo/about-logo-complete.webp" alt="">
+          </div>
+          <h2 id="info">2023 - Alejandro Velasquez<br><span>VELZCK</span> All Rights Reserved</br></h2>
+        </div>
+        <div id="contact"></div>
+        <div id="socialMediaCont">
+          <ul id="socialMedia">
+            <p id="socialMediaText">follow me on my social medias</p>
+            <li class="socialMediaIcon"><a href="https://www.linkedin.com/in/velzckcode/" target="_blank"
+                rel="noopener noreferrer"><img src="style/icons/linkedin.svg" alt=""></a></li>
+            <li class="socialMediaIcon"><a href="https://github.com/VelzckC0D3/" target="_blank"
+                rel="noopener noreferrer"><img src="style/icons/github.svg" alt=""></a></li>
+            <li class="socialMediaIcon"><a href="https://www.instagram.com/alejandro.velzck/" target="_blank"
+                rel="noopener noreferrer"><img src="style/icons/instagram.svg" alt=""></a></li>
+          </ul>
+        </div>
       </div>
-      <div id="partnersButtom">
-        <img class="partnerLogo" src="style/logo/partner-daumkakao.svg" alt="dumkakao logo">
-        <img class="partnerLogo" src="style/logo/partner-airbnb.svg" alt="airbnb logo">
-      </div>
-    </div>
 
-  </section>
+    </footer>
+    <!-- FOOTER -->
 
-  <footer id="footerCont">
-
-    <div id="footer">
-      <div id="copryright">
-        <img id="footerImg" src="style/logo/about-logo.webp" alt="">
-        <h2 id="info">2023 - Alejandro Velasquez<br><span>VELZCK</span> All Rights Reserved</br></h2>
-      </div>
-      <div id="contact"></div>
-    </div>
-
-  </footer>
-
-  <script src="/assets/menuActions.js"></script> <!-- mobile menu interaction -->
-  <script src="/assets/switch.js"></script> <!-- mobile menu interaction -->
+    <script src="/assets/buttonsActions.js"></script> <!-- mobile menu interaction -->
+    <script src="/assets/switch.js"></script> <!-- mobile menu interaction -->
 </body>
 
 </html>
