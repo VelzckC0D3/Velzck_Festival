@@ -39,3 +39,13 @@ aboutSectionButton.addEventListener('click', () => {
   aboutPage.classList.remove('switch');
 });
 // SWITCH ACTION BUTTON //
+
+// LOGO TAKES YOU TO HOME PAGE //
+
+const logo = document.querySelector('#menuLogo');
+logo.addEventListener('click', () => {
+  heroPage.classList.remove('switch');
+  aboutPage.classList.add('switch');
+});
+
+// LOGO TAKES YOU TO HOME PAGE //
