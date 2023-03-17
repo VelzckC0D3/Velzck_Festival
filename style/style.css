@@ -562,7 +562,7 @@ header {
     width: auto;
     height: 3.5rem;
     border-radius: 0;
-    border: 8px solid var(--sColor);
+    border: 5px solid var(--sColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -650,6 +650,10 @@ header {
 }
 
 @media (min-width: 1024px) {
+  #menuBar {
+    gap: 2rem;
+  }
+
   .partnerLogo {
     width: 9rem;
   }
