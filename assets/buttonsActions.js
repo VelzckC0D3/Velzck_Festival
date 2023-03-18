@@ -60,6 +60,7 @@ window.addEventListener('scroll', () => {
   const accessibility = document.querySelector('#accessibility');
   header.classList.toggle('fixed', window.scrollY > 0);
   accessibility.classList.toggle('z-index', window.scrollY > 0);
+  wrapper.classList.remove('viewMenu');
 });
 
 // FIXED DESKTOP MENU //
@@ -70,6 +71,8 @@ function removeClassesOnResize() {
   if (window.innerWidth > 680) {
     menu.classList.remove('menuOn');
     body.classList.remove('block');
+    hamburguer.innerHTML = '<img src="style/icons/hamb-bars.svg" alt="menu icon">';
+    wrapper.classList.remove('viewMenu');
   }
 }
 

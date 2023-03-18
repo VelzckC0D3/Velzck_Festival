@@ -37,17 +37,15 @@
   align-items: flex-start;
 }
 
-.heroTItleAbout {
+.heroTitleAbout {
   text-align: center;
   width: 100%;
+  font-size: 1.8rem;
+  -webkit-text-stroke: 0.3px;
+  color: var(--sColor);
 }
 
-.heroTitleAbout:nth-child(odd) {
-  width: 100%;
-  text-transform: capitalize;
-}
-
-.heroTItleAbout:nth-child(even) {
+.heroTitleAbout:nth-child(even) {
   background-image: url(bg/text-bg.webp);
   -webkit-background-clip: text;
   filter: brightness(1);

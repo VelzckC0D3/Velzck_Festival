@@ -33,6 +33,8 @@
 
 .heroTitle:nth-child(odd) {
   width: 100%;
+  -webkit-text-stroke: 0.5px;
+  font-size: 1.5rem;
   text-align: left;
   text-transform: capitalize;
   color: var(--sColor);
@@ -421,7 +423,7 @@
 
   .programLi {
     flex-direction: column;
-    padding: 0;
+    padding: 0.5rem 0;
     width: auto;
     height: 15rem;
   }
