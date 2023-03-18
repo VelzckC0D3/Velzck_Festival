@@ -81,6 +81,7 @@ window.addEventListener('resize', removeClassesOnResize);
 
 const moreButton = document.querySelector('.more');
 const more = document.querySelector('.moreSpeakers');
+const speakersCont = document.querySelector('#speakersTitle');
 moreButton.addEventListener('click', () => {
   more.classList.toggle('showMore');
   if (
@@ -93,6 +94,7 @@ moreButton.addEventListener('click', () => {
     === 'less<img class="arrow" src="style/icons/arrow-up.svg" alt="arrow up icon">'
   ) {
     moreButton.innerHTML = 'more<img class="arrow" src="style/icons/arrow-down.svg" alt="arrow down">';
+    speakersCont.scrollIntoView({ behavior: 'smooth' });
   }
 });
 

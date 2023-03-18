@@ -45,8 +45,6 @@ const speakers = [
   },
 ];
 
-console.log(speakers);
-
 const container = document.querySelector('#speakersGrid');
 let moreSpeakers = null;
 
