@@ -502,7 +502,6 @@
 }
 
 @media (min-width: 768px) {
-
   .about {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -537,7 +536,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .about {
     font-size: 1rem;
     line-height: 1rem;
