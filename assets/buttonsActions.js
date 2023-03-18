@@ -17,12 +17,24 @@ document.addEventListener('click', (e) => {
 const body = document.querySelector('body');
 const menu = document.querySelector('#menuBar');
 const menuButtons = document.querySelectorAll('.menuAction');
+const hamburguer = document.querySelector('#menuBtn');
 
 menuButtons.forEach((index) => {
   index.addEventListener('click', () => {
     if (window.innerWidth < 680) {
       menu.classList.toggle('menuOn');
       body.classList.toggle('block');
+    }
+    if (
+      hamburguer.innerHTML
+      === '<img src="style/icons/hamb-bars.svg" alt="menu icon">'
+    ) {
+      hamburguer.innerHTML = '<img src="style/icons/x-solid.svg" alt="menu icon">';
+    } else if (
+      hamburguer.innerHTML
+      === '<img src="style/icons/x-solid.svg" alt="menu icon">'
+    ) {
+      hamburguer.innerHTML = '<img src="style/icons/hamb-bars.svg" alt="menu icon">';
     }
   });
 });
