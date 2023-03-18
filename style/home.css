@@ -453,14 +453,16 @@
   }
 
   #speakersGrid {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    grid-column: 1 / 4;
     height: auto;
-    display: grid;
+    overflow: visible;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-    gap: 1rem;
-    max-width: 90%;
+    display: grid;
+    column-gap: 0;
+    row-gap: 1rem;
+    margin-bottom: 3rem;
+    width: 90%;
   }
 
   .moreSpeakers {
@@ -500,6 +502,12 @@
 }
 
 @media (min-width: 768px) {
+
+  .about {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .speakersImg {
     height: 15rem;
     width: 9rem;
@@ -528,6 +536,14 @@
   }
 }
 
+@media (min-width: 1024px) {
+
+  .about {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
 /* MEDIA MIN | MEDIA MIN */
 
 /* MEDIA MAX | MEDIA MAX */
@@ -536,6 +552,10 @@
   .programLiDesc {
     overflow-y: scroll;
     align-items: flex-start;
+  }
+
+  .about {
+    font-size: 0.75rem;
   }
 }
 
