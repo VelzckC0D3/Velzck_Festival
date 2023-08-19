@@ -1,5 +1,9 @@
 <a name="readme-top"></a>
-![onlyText](https://user-images.githubusercontent.com/92229666/221316081-fb9e0b88-a571-4414-baa7-76d8d411c181.gif)
+<div align="center">
+  
+  ![git-logo](https://github.com/VelzckC0D3/Velzck_Shop/assets/92229666/e0a9bd85-bf69-4013-a10b-fdadbb0f7d35)
+
+</div>
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
