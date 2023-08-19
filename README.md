@@ -26,9 +26,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Architecture & Design Festival ] `(capstone)` <a name="about-project"></a>
+# 📖 [Architecture & Design Festival ] <a name="about-project"></a>
 
-Introducing my capstone project where I applied all the knowledge earned during all the first module
+Introducing Architecture & Designers Festival, another sneak peek of my Fonrt-End skills, you can check that this site is totally responsive and adaptative, using pure CSS, HTML and DOM with JavaScript 
 
 ## 🛠 Built With <a name="built-with"></a>
 
